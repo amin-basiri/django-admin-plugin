@@ -51,3 +51,5 @@ INSTALLED_APPS = [
 ```bash
 python manage.py admin_plugin init
 ```
+
+![action-button.png](docs%2Fimage%2Faction-button.png)
