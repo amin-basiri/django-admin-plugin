@@ -15,3 +15,39 @@ Django Admin Plugins to enhance django admin abilities
 ```bash
 pip install django-admin-plugin
 ```
+
+## Quickstart
+
+```python
+# admin.py
+from django_admin_plugin.admin import ActionButton
+from django_admin_plugin.admin import ActionButtonAdmin
+
+
+class MyCustomAdmin(ActionButtonAdmin):
+        action_buttons = (
+            ActionButton(
+                name="Activate", model_function="activate", color="green"
+            ),
+            ActionButton(
+                name="Deactivate", model_function="deactivate", color="red"
+            ),
+        )
+```
+
+```python
+INSTALLED_APPS = [
+    ...
+    "django_admin_plugin",
+]
+
+```
+
+
+
+## Initialize And Sync
+
+1 - Create action button permissions
+```bash
+python manage.py admin_plugin init
+```
