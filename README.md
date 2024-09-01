@@ -49,7 +49,7 @@ INSTALLED_APPS = [
 
 1 - Create action button permissions
 ```bash
-python manage.py admin_plugin init
+python manage.py init_admin_plugin
 ```
 
 ![action-button.png](docs%2Fimage%2Faction-button.png)
